@@ -1,1 +1,320 @@
-<h1>Hello World Wide Web!</h1>
+
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Yasemin Gunal ABOUT ME</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="thumbnail.png">
+    <!-- Created by Yasemin Gunal 3/19/2026 -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    
+    <style>
+    
+      * {box-sizing: border-box;}
+      
+      body { 
+        background-color: #322C4D;
+        text-align: center;
+        margin: 10px 8px 0 8px;
+      }
+        
+      #header {
+        background-color: #65FFDB;
+        height: 80px;
+        width: 100%; 
+        position: sticky;
+        top: 0px;
+        white-space: nowrap; 
+        z-index: 1000; /* adjusts layer order */
+      }
+  
+      #header li {
+        font-family: KoHo;
+        font-size: 40px;
+        color: #282342;
+        list-style: none;
+        display: inline; 
+        margin: 0 50px 0 0px;
+        position: relative;
+        /*border: 1px solid red;*/
+        top: 10px;
+        cursor: pointer;
+      }
+      
+      #header li:hover {
+          color: #CC2F5C;
+      }
+       
+      #header a:hover {
+          color: #CC2F5C;
+      }
+      
+      #header a {
+        color: #282342;
+        text-decoration: none;
+      }
+        
+      h2 {
+        font-family: Koho; 
+        color: #CC2F5C;
+        font-size: 65px;
+/*         width: 50%; */
+      }
+      
+        h3 {
+        font-family: Koho; 
+        color: #65FFDB;
+        font-size: 45px;
+/*         width: 50%; */
+      }
+      
+      
+      h1 {
+        font-family: Koho; 
+        color: #65FFDB;
+        font-size: 90px;
+        margin-top: 60px;
+      }
+      
+      p { 
+        font-family: Krub;
+        color: #65FFDB;
+        font-size: 25px;
+        max-width: 60%;
+        margin: 20px auto;
+      }
+      
+      li {
+        text-align: left;
+        font-family: Krub;
+        color: #65FFDB;
+        font-size: 25px;
+        list-style-type: circle;
+        margin-left: 50px;
+      }
+      
+      a {
+        color: #65FFDB;
+      }
+      
+      
+      
+      #AVAsGrid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: center;
+        column-gap: 20px;
+
+      }
+      
+      .AVAsContent {
+        margin: 1fr 1fr;
+        height: 150px;
+        cursor: pointer;
+      }
+      
+
+      .wips1Content {
+       margin: 20px 10px;
+       cursor: pointer;
+      }
+      
+      
+  
+      
+      /* footer */
+      
+       
+      #attributes a {
+        color: #65FFDB;
+        font-size: 12px;
+      }
+      
+      #attributes {
+          margin-top: 30px;
+      }
+      
+      #footer h2 {
+         margin: 0 auto;
+      }
+      
+      #footer {
+        margin-top: 50px;
+      }
+      
+      #contacts li {
+         list-style: none;
+         display: inline;
+         margin: 0 auto;
+         padding: 0 30px 0 0px;
+      }
+      
+      #contacts a {
+        text-decoration: none;
+      
+      }
+      /* footer */
+      /* dropdown shtuff */ 
+      
+           
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 1001; 
+        top: 50px;
+        
+        left: 50%;
+        transform: translateX(-50%);
+
+        padding-bottom: 25px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+      
+        background-color: #65FFDB;
+        white-space: nowrap; 
+        list-style: none;
+      }
+   
+
+      .dropdown-menu li {
+        margin: 0;
+        padding: 0px 0px 0px 0px;  
+        color: #282342;
+      }
+
+
+      .dropdown-menu a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 35px;
+      }
+
+      .dropdown:hover .dropdown-menu {
+       display: flex;
+      }
+
+      
+    /* dropdown shtuff */
+      
+      #avatar{
+        position: fixed; 
+        bottom: 0px;        
+        right: 0px;           
+        z-index: 1000;
+        cursor: pointer;
+        
+      }
+    
+    </style>
+    
+      
+  </head>
+  <body>
+    
+    
+  <div id="header">
+      <ul>
+        <b>
+        <li id="hometxt"><a href="homePage.html">HOME</a></li>
+        <li id="aboutmetxt"><a href="aboutMePage.html">ABOUT ME</a></li>
+        <li id="worktxt" class="dropdown">
+          <a href="workPage.html" style="color:#CC2F5C;">WORK</a>
+          <ul class="dropdown-menu">
+            <li ><a href="workPage.html#digitalEnter">DIGITAL</a></li>
+            <li ><a href="workPage.html#tradEnter">TRADITIONAL</a></li>
+            <li ><a href="workPage.html#paidEnter">PAID WORK</a></li>
+            <li ><a href="workPage.html#projectEnter">PROJECTS</a></li>
+          </ul>
+          </li>
+          <li id="resumetxt"><a href="resumePage.html">RESUME</a></li>
+        </b>
+      </ul>
+     </div>
+    
+    <img src="metaAva.png" id="avatar" width="150px" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
+    
+    <div id="mainContent">
+      
+    </div>
+  
+    <div id="footer">
+      <h2>
+        CONTACT ME!
+      </h2>
+      
+      <ul id="contacts">
+        <li> <a href="mailto:yasemin.e.gunal@gmail.com" target="_blank"> <img src="gmail.png" width="50px" alt="gmail icon"></a></li>
+        <li> <a href="https://wa.me/15195895380" target="_blank"> <img src="mobile.png" width="50px" alt="mobile phone icon"> </a> </li>
+        <li> <a href="https://www.linkedin.com/in/yasemin-gunal-9b0470304/" target="_blank"> <img src="linkedin.png" width="50px" alt="linkedin icon"> </a> </li> 
+      </ul>
+     
+       <div id="attributes">
+       <a href="https://www.flaticon.com/free-icons/telephone" target="_blank" title="telephone icons">Telephone icons created by Ricardo Ruiz - Flaticon</a> 
+       <a href="https://www.flaticon.com/free-icons/linkedin" target="_blank" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+       <a href="https://www.flaticon.com/free-icons/email" target="_blank" title="email icons">Email icons created by Pixel perfect - Flaticon</a>
+      </div> 
+    </div>
+    
+   
+    
+    
+  </body>
+  
+  
+  <script>
+  // get the avatar image
+  const avatarImg = document.getElementById('avatar');
+  let avatarVisible = 1;
+    
+  document.addEventListener("keydown", function(event) {  // hide ava when clicking h
+
+    if (event.key === "h" || event.key === "H") {
+      avatarVisible = 1 - avatarVisible;
+      avatarImg.style.opacity = avatarVisible;
+      
+      if (avatarVisible === 1) {
+        avatarImg.style.pointerEvents = "auto";
+      } else {
+        avatarImg.style.pointerEvents = "none";
+      }
+      }
+  });
+
+  // assign click events
+    
+  document.querySelectorAll('.AVAsContent').forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      avatarImg.src = 'creepyAva.png';
+    });
+  });
+    
+  document.getElementById('htmlTxt').addEventListener('click', (e) => {
+  e.stopPropagation();  
+  avatarImg.src = 'metaAva.png';
+  });
+  
+  document.getElementById('avatar').addEventListener('click', (e) => {
+  e.stopPropagation();  
+  avatarImg.src = 'hideAva.png';
+  });
+    
+  document.querySelectorAll('.wips1Content').forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      avatarImg.src = 'babyAva.png';
+    });
+  });
+ 
+ 
+</script>
+  
+</html>
